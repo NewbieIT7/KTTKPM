@@ -9,3 +9,4 @@ services:
     ports:
       - "3307:3307"
     container_name: bai2
+ 

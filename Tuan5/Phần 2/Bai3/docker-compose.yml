@@ -17,3 +17,4 @@ services:
     depends_on:
       - mysql-db
     container_name: bai3_phpmyadmin
+ 

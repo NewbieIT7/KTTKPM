@@ -4,3 +4,4 @@ services:
     container_name: bai5_redis
     ports:
       - "63700:6370"
+ 
