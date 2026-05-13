@@ -1,0 +1,19 @@
+services:
+  mysql-db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydb
+    container_name: bai3_mysql
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    environment:
+      PMA_HOST: mysql-db
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword
+    ports:
+      - "8081:80"
+    depends_on:
+      - mysql-db
+    container_name: bai3_phpmyadmin
